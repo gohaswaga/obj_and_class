@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Музыкальный плеер</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="track-list">
+    <h2>Список треков</h2>
+    <ul id="track-items"></ul>
+  </div>
+  <div id="player-container"></div>
+  <div id="player" class="hidden">
+    <img id="cover" src="" alt="Обложка" width="200" />
+    <h3 id="title">Название трека</h3>
+    <p id="artist">Исполнитель</p>
+
+    <audio id="audio" controls></audio>
+
+    <div class="controls">
+      <img src="assets/left.png" alt="Назад к списку" id="back-button" />
+      <img src="assets/rewind.png" alt="Предыдущий" id="prev-button" />
+      <img id="play-button" src="assets/play.png" alt="Пауза/Воспроизведение" />
+      <img src="assets/forward.png" alt="Следующий" id="next-button" />
+      <img src="assets/refresh.png" alt="Перемешать" id="shuffle-button" />
+    </div>
+  </div>
+
+  <script src="classscript.js"></script> 
+</body>
+</html>
